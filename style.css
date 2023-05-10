@@ -206,6 +206,7 @@ header{
     border: none;
     outline: none;
     color: #162938;
+    caret-color: #162938;
     font-size: 1em;
     font-weight: 600;
     padding: 0 3.75rem 0 .5rem;
@@ -239,6 +240,7 @@ header{
 .remember-forgot a{
     color: #162938;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .remember-forgot a:hover{
