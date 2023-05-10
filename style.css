@@ -105,6 +105,37 @@ header{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    transform: scale(0);
+    transition: transform .2s ease, height .2s ease;
+}
+
+.wrapper.active-popup{
+    transform: scale(1);
+}
+
+/*wrapper active class styling */
+.wrapper.active{
+    height: 45rem;
+}
+
+.wrapper .form-box.login{
+    transition: transform .2s ease;
+    transform: translateX(0);
+}
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-40rem);
+}
+
+.wrapper .form-box.register{
+    position: absolute;
+    transform: translateX(40rem);
+    transition: none;
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .2s ease;
+    transform: translateX(0);
 }
 
 .wrapper .icon-close{
@@ -120,10 +151,10 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom-left-radius: 20px;
-    cursor: pointer;
     transition: opacity .5s;
+    cursor: pointer;
+    z-index: 1;
 }
-
 .wrapper .icon-close:hover{
     opacity: .8;
 }
@@ -132,6 +163,8 @@ header{
     width: 100%;
     padding: 4rem;
 }
+
+
 
 .form-box h2{
     font-size: 2em;

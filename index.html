@@ -16,18 +16,18 @@
             <a href="#">About</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>
-            <button class="btnLogin-popup">Login</button>
+            <button class="btnLogin-popup">Log In</button>
         </nav>
     </header>
 <!-- wrapper -->
-    <main class="wrapper">
+    <main class="wrapper active-popup">
         <!-- close icon -->
         <span class="icon-close">
-            <ion-icon name="close-outline"></ion-icon>
+            <ion-icon name="close"></ion-icon>
         </span>
 <!-- login form -->
         <div class="form-box login">
-            <h2>Login</h2>
+            <h2>Log In</h2>
             <form action="#">
                 <div class="input-box">
                     <span class="icon">
@@ -49,7 +49,7 @@
                     </label>
                     <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn">Sign In</button>
                 <div class="login-register">
                     <p>Don't have an account?
                      <a href="#" class="register-link">Register</a>
@@ -57,8 +57,48 @@
                 </div>
             </form>
         </div>
-    </main>
 
+<!-- registration form -->
+        <div class="form-box register">
+            <h2>Register</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person"></ion-icon>                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">I agree to the terms & conditions
+                    </label>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <div class="login-register">
+                    <p>Already have an account?
+                     <a href="#" class="login-link">Login</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+    </main>
+<!-- js file -->
+    <script src="main.js"></script>
 <!-- file for icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
